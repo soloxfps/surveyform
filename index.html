@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SURVEY FORM</h1>
+    <div class="form-container">
+        <h6>Let us know how we can improve</h6>
+        <form>
+            <label for="name">* Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">* Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="age">* Age</label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+
+            <label for="file">* Upload File</label>
+            <input type="file" id="file" name="file">
+
+            <label for="role">Which option best describes your current role?</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>* How likely are you to recommend this program to a friend?</label>
+            <div style="display: flex; flex-direction: column; gap: 5px; font-size: 14px; color: #333;">
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" id="definitely" name="recommend" value="definitely" style="margin-right: 10px;">
+                    <label for="definitely" style="margin: 0;">Definitely</label>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" id="maybe" name="recommend" value="maybe" style="margin-right: 10px;">
+                    <label for="maybe" style="margin: 0;">Maybe</label>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" id="not-sure" name="recommend" value="not-sure" style="margin-right: 10px;">
+                    <label for="not-sure" style="margin: 0;">Not sure</label>
+                </div>
+            </div>
+            
+
+            <label for="like">What do you like most here?</label>
+            <select id="like" name="like">
+                <option value="">Select an option</option>
+                <option value="frontend">Front-end Projects</option>
+                <option value="backend">Back-end Projects</option>
+                <option value="data-visualization">Data Visualization</option>
+            </select>
+
+            <label>Things that should be improved in the future (Check all that apply):</label>
+            <div style="display: flex; flex-direction: column; gap: 5px; font-size: 14px; color: #333;">
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" id="frontend" name="improve" value="frontend" style="margin-right: 10px;">
+                    <label for="frontend" style="margin: 0;">Front-end Projects</label>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" id="backend" name="improve" value="backend" style="margin-right: 10px;">
+                    <label for="backend" style="margin: 0;">Back-end Projects</label>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" id="data-viz" name="improve" value="data-viz" style="margin-right: 10px;">
+                    <label for="data-viz" style="margin: 0;">Data Visualization</label>
+                </div>
+            </div>
+            
+
+            <label for="comments">Any Comments or Suggestions?</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
